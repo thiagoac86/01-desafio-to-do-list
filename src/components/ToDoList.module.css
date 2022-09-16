@@ -1,0 +1,113 @@
+.toDoList {
+    padding: 0 22rem;
+}
+
+.newTaskForm {
+    width: 100%;
+    margin-top: -1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newTaskForm textarea {
+    width: 100%;
+    background: var(--gray-500);
+    border: 0;
+    border-radius: 8px;
+    resize: none;
+    height: 3.4rem;
+    padding: 0.8rem;
+    color: var(--gray-100);
+}
+
+.newTaskForm button[type=submit] {
+    width: 5.6rem;
+    border: 0;
+    border-radius: 8px;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.newTaskForm button[type=submit]:not(:disabled):hover {
+    background-color: var(--blue);
+}
+
+.newTaskForm button[type=submit]:disabled {
+    opacity: 0.75;
+    cursor: not-allowed;
+}
+
+.taskListBox {
+    margin-top: 1.5rem;
+}
+
+.toDoList header {
+    margin-top: 4.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createdTasksCount {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+}
+
+.finishedTasksCount {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+}
+
+.createdTasksCount strong {
+    line-height: 1.6;
+    color: var(--blue);
+}
+
+.createdTasksCount span {
+    background: var(--gray-400);
+    padding: 0 0.4rem;
+    border-radius: 8px;
+}
+
+.finishedTasksCount strong {
+    line-height: 1.6;
+    color: var(--purple-dark);
+}
+
+.finishedTasksCount span {
+    background: var(--gray-400);
+    padding: 0 0.4rem;
+    border-radius: 8px;
+}
+
+.emptyTaskList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emptyTaskList img {
+    margin-top: 4rem;
+}
+
+.emptyTaskList strong {
+    margin-top: 1.5rem;
+    color: var(--gray-300);
+    line-height: 1.6;
+}
+
+.emptyTaskList span {
+    color: var(--gray-300);
+    line-height: 1.6;
+}

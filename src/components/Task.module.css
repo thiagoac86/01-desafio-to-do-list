@@ -1,0 +1,35 @@
+.task {
+    margin-top: 0.7rem;
+    display: flex;
+    gap: 1rem;
+
+    background: var(--gray-500);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.taskBox {
+    flex: 1;
+}
+
+.taskContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskContent button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+}
+
+.taskContent button:hover {
+    color: var(--danger);
+}
+
+.markedText {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
